@@ -16,4 +16,5 @@ A continuación encontrarás un video con una introducción sobre cómo encarar 
 https://youtu.be/EVcLnH15ZmI
 
 #index.html Finalizado el maquetado
+
 #Shop.html Falta agregar el contenido de la barra lateral(aside)
