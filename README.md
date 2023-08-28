@@ -14,3 +14,6 @@ Contenido multimedia para el challengeArchivo(se descarga del aula virtual multi
 
 A continuación encontrarás un video con una introducción sobre cómo encarar el desarrollo de este primer desafío:
 https://youtu.be/EVcLnH15ZmI
+
+#index.html Finalizado el maquetado
+#Shop.html Falta agregar el contenido de la barra lateral(aside)
