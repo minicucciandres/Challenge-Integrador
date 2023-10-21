@@ -5,31 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkashop</title>
+    <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
 <body>
-    <!--Inicio Header-->
+    <!--Inicio Header Utilizamos el standard BLEM para nombrar las clases-->
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="">
                     <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkashop">
 
                 </a>
             </picture>
 
-            <ul>
-                <li>
-                    <a href=".pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item whit-submenu">
+                    <a class="navbar__link whit-icon" href=".pages/shop.html">SHOP <iconify-icon icon="fluent:chevron-down-12-filled"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a ref="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a ref="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a ref="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href=".pages/shop.html">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=".pages/shop.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href=".pages/login.html">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href=".pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href=".pages/carrito.html">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href=".pages/carrito.html">
                         <img src="./img/icons/cart-icon.svg" alt="icono del carrito">
 
                     </a>
@@ -139,10 +151,10 @@
         <section>
             <nav>
                 <ul>
-<li><a href="pages/shop.html">SHOP</a></li>
-<li><a href="pages/login.html">LOGIN</a></li>
-<li><a href="pages/contact.html">CONTACTO</a></li>
-<li><a href="pages/registrarse.html"></a></li>
+                    <li><a href="pages/shop.html">SHOP</a></li>
+                    <li><a href="pages/login.html">LOGIN</a></li>
+                    <li><a href="pages/contact.html">CONTACTO</a></li>
+                    <li><a href="pages/registrarse.html"></a></li>
                 </ul>
 
             </nav>
@@ -153,6 +165,8 @@
         </section>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+    
 </body>
 
 </html>
