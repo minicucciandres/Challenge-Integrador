@@ -18,3 +18,6 @@ https://youtu.be/EVcLnH15ZmI
 #index.html Finalizado el maquetado
 
 #Shop.html Falta agregar el contenido de la barra lateral(aside)
+
+#mision2 dar estilos al sitio
+https://www.youtube.com/watch?v=3tMtqdhwws4&t=2003s
