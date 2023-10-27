@@ -124,10 +124,11 @@ header {
 
 .navbar__link {
     font-size: var(--font-medium);
-    padding: var(--spacings-8), var(--spacings-16);
+    padding: var(--spacings-8);
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+    text-transform: uppercase;
 }
 
 .navbar__link:hover {
@@ -359,6 +360,19 @@ transition: all .3s ease-in-out;
 }
 
 
+/*Footer*/
+.footer{
+    background-color: var(--dark-solid);
+    padding: var(--spacings-68);
+}
+
+.footer__copy{
+    text-align: center;
+    margin-top: var(--spacings-36);
+}
+
+
+/*animaciones*/
 @keyframes fade {
     0% {
         opacity: 0;
