@@ -696,7 +696,19 @@ iconify-icon{
     gap: 28px;
 }
 
-.buscar {
+
+
+.Filtros__label {
+    color: #111;
+    font-size: var(--large);
+    font-weight: 500;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.filtros_Titulo_Item {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -704,4 +716,462 @@ iconify-icon{
     justify-content: center;
     gap: 8px;
 }
+
+/*BUSCAR*/
+.buscar_filtro__input{
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    width: 100%;
+    height: 45px;
+    padding: 8px 6px;
+    font-size:var(--large) ;
+    font-weight: 700;
+    color: var(--gray);
+    font-family: var(--font-inter);
+}
+
+.buscar_filtro__input::placeholder{
+    color:#B9B9B9;
+    font-size:var(--medium1);
+    font-weight: 500;
+}
+
+/*ORDENAR*/
+
+.ordenar_filtro__input{
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    width: 100%;
+    height: 45px;
+    padding: 8px 6px;
+    font-size:var(--large) ;
+    font-weight: 700;
+    color: var(--gray);
+    font-family: var(--font-inter);
+}
+.buscar_filtro__input::placeholder{
+    color:#B9B9B9;
+    font-size: var(--medium1);
+    font-weight: 500;
+}
+
+
+/*PRECIO*/
+.precio__items {
+    max-width:100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 8px;
+}
+.precio_filtro__input{
+    width: 60px;
+    height:28px;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    padding: 2px 23px;
+    color: #B9B9B9;
+    font-size: var(--medium1);
+    font-weight: 500;
+}
+
+/*FILTRAR*/
+
+.filtrar__check{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.filtrar__check > ul {
+    padding:  0 0 0 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+.filtrar__check > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+input[type="checkbox"] {
+    height:24px;
+    width:24px;
+    border-radius: 6px;
+    border: 2px solid #30343F;
+    accent-color: var(--red);
+  }
+  .filtrar__check > ul > li > label {
+    font-size: var(--medium);
+    font-weight: 500;
+    color: #111;
+  }
+
+  /*SHOP lista de productos*/
+  
+  .Shop__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /*---paginacion--*/
+  .paginacion {
+    width:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 22px;
+  }
+
+  .paginacion > span {
+    cursor: pointer;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid  #919EAB;
+    border-radius: 4px;    
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+  }
+
+
+/** INICIO DE ADMIN **/
+
+.admin__buscar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 36px;
+  }
+  
+  .admin__buscar input {
+    border: 2px solid;
+    border-color: #30343f;
+    border-radius: 6px;
+    width: 500px;
+    padding: 1rem;
+  }
+  
+  .admin__buscar input::placeholder {
+    font-size: 1.2em;
+    color: #b9b9b9;
+  }
+  
+  .admin__buscar img {
+    max-width: 30px;
+    margin-right: 1.9rem;
+  }
+  
+  .admin__tab__header {
+    padding-inline-end: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3.4rem;
+    margin-top: 3.6rem;
+  }
+  
+  .admin__tab {
+    width: 100%;
+    margin-bottom: 3.6rem;
+  }
+  .admin__tab__tit {
+    font-family: var(--alternative-font);
+    font-size: 42px;
+  }
+  
+  .admin__tab__add {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    align-content: center;
+    font-size: 2.4em;
+  }
+  
+  .admin__tab__icon--plus {
+    color: var(--primary-solid);
+    font-size: 1.8em;
+    margin-left: 2.2rem;
+    cursor:pointer ;
+  }
+  
+  .admin__tab th {
+    padding-bottom: 23px;
+    text-align: left;
+    font-size: 2.4em;
+    font-weight: 700;
+  }
+  
+  .admin__tab td {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 1rem;
+  }
+  
+  .admin__tab__td--icon_pencil {
+    color:var(--secondary-solid);
+    cursor:pointer ;
+  }
+/* 
+  .admin__tab__td--icon_pencil:hover {
+    
+  } */
+  
+  .admin__tab__td--icon_trash {
+    color:var(--primary-solid);
+    cursor:pointer ;
+  }
+  
+  /*** FIN DE ADMIN **/
+
+
+  /* Create */
+
+  .Create__titulo {
+    font-family: var(--alternative-font);
+    font-size: 42px;
+    padding: 30px 0px;
+  }
+  .create__form {
+    margin: var(--spacing-20) 0;
+    width: 827.63px;
+    /* height: 669.3px; */
+    
+  }
+
+  .form__typografia{
+    color: #000;
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+
+  }
+
+  .form__botones{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+       
+}
+
+.form__botones--item {
+    width: 175px;
+    height: 54px;
+    background-color: var(--primary-solid);
+    font-size: 14px;
+    color: var(--light-font-solid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    position:static;
+
+}
+
+.create__form--Item {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    row-gap: var(--spacing-28);
+    margin: var(--spacing-20) 0;
+    padding: 16px 0px;
+  }
+
+ 
+  .Texto__subrayadoRojo{
+    font-size:var(--display);
+    border-bottom: 2px solid var(--primary-solid);
+    align-self: flex-start;
+    font-size: 20px;
+    color: #b9b9b9;
+    padding: 4px 0px 0px 0;
+    
+}
+
+  .create__form--select_grupo {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    row-gap: var(--spacing-28);
+    margin: var(--spacing-20) 0;
+  }
+
+  .create__form--select {
+    border-radius: 6px;
+    border: 2px solid #30343f;
+    width: 15.18963rem;
+    height: 2.76781rem;
+    font-size: 20px;
+    color: #b9b9b9;
+  }
+
+  .descripcion_pruducto{
+    width:827.63px;
+    height:194.83px;
+  }
+
+  .sku_precio_stock{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+
+}
+
+  /* Fin create */
+
+  /*edit*/
+
+  .edit__imagen{
+    width: 150px;
+    height: 173px;
+    margin-right: 110px;
+    border: none;
+    border-bottom: 1px var(--primary-solid);
+
+  }
+  
+  /*fin edit*/
+
+
+/*----- Login -----*/
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-28);
+    margin: var(--spacing-36) 0;
+  }
+  
+  .login__title {
+    font-family: var(--alternative-font);
+    font-size: var(--font-jumbo);
+  }
+  
+  .form-list__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-28);
+  }
+  
+  .form-list__item {
+    display: flex;
+    gap: var(--spacing-20);
+    justify-content: space-between;
+color: var(--dark-solid);
+  }
+  
+  .form-list__label {
+    font-family: var(--base-font);
+    font-size: 24PX;
+    width: 148px;
+    height: 29px;
+  }
+  
+  #email {
+    margin-left: var(--spacing-68);
+  }
+  
+  .form-list__input {
+    font-size: var(--font-small);
+    border: none;
+    border-bottom: 1px solid var(--primary-solid);
+  }
+  
+  .form-list__item3 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+    gap: 10px;
+
+    
+    
+  }
+  
+  .form-list__buttonSubmit {
+    font-size: var(--font-xsmall);
+    font-family: var(--base-font);
+    color: var(--light-font-solid);
+    background-color: var(--primary-solid);
+    border: none;
+    padding: var(--spacing-12) var(--spacing-28);
+    cursor: pointer;
+  }
+  
+  .form-list__subitem {
+    display: flex;
+    font-family: var(--base-font);
+    align-items: center;
+    gap: var(--spacing-12);
+    font-size: var(--font-small);
+  }
+  
+  .login__link {
+    font-family: var(--base-font);
+    color: var(--secondary-solid);
+    font-size: var(--font-medium);
+  }
+
+  .form-list__labelCheckbox{
+    width: 129.25PX;
+    height: 22PX;
+    border: 2px solid var(--fondo-oscuro);
+    border-radius: 3px;
+    color: var(--dark-solid);
+    padding: 0px 10px;
+    
+
+  }
+
+  /*fin login*/
+
+  /*Create Cta*/
+  .Create__subtitulo {
+    font-family: var(--alternative-font);
+    font-size: 32px;
+    padding: 30px 0px;
+  }
+
+
+  .form__cta__typografia{
+    color: #000;
+    font-family: var(--base-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+  }
+
+  .form__cta-list__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-28);
+  
+  }
 
