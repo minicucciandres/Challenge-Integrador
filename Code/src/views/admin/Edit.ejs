@@ -4,59 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CREATE | Funkashop</title>
+    <title>EDIT | Funkashop</title>
     <link rel="stylesheet" href="../../CSS/index.css">
 </head>
 
 <body>
-    <!--Inicio Header Utilizamos el standard BLEM para nombrar las clases-->
-    <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkashop">
-
-                </a>
-            </picture>
-
-            <ul class="navbar__menu">
-                <li class="navbar__item whit-submenu">
-                    <a class="navbar__link whit-icon" href="shop.html">SHOP <iconify-icon
-                            icon="fluent:chevron-down-12-filled"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a ref="" class="submenu__link">Funkos</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a ref="" class="submenu__link">Remeras</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a ref="" class="submenu__link">Llaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href=".pages/shop.html">CONTACTO</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href=".pages/login.html">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href=".pages/carrito.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="icono del carrito">
-
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--Fin Header-->
+    <%- include('../partials/header') %>
 
     <main>
 
         <section class="container">
 
-            <h1 class="Create__titulo">Crear Nuevo Item</h1>
+            <h1 class="Create__titulo">Editar Item</h1>
             <form action="" class="create__form form__typografia">
                 <section class="create__form--select_grupo">
                     <div class="">
@@ -136,14 +95,19 @@
 
                 </section>
 
+                
+                <section>
+                    <img class="edit__imagen" src="../../img/pokemon/pidgeotto-1.webp" alt="pokemon" />
+                    <img class="edit__imagen" src="../../img/pokemon/pidgeotto-box.webp" alt="pokemon" />
+                </section> 
+ 
+
 
             </form>
-            
-
             <div class="create__form--Item">
-                
+
                 <div class="form__botones">
-                    <button class="form__botones--item">Agregar Productos</button>
+                    <button class="form__botones--item">Guardar producto</button>
                     <button class="form__botones--item">Limpiar</button>
                 </div>
             </div>
@@ -152,31 +116,6 @@
 
     </main>
     <%- include('../partials/footer') %>
-
-        <nav class="navbar container">
-            <ul class="navbar__item">
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/shop.html">Shop</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/registrarse.html">registrarse</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/login.html">login</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="pages/contact.html">contacto</a>
-                </li>
-            </ul>
-
-            <picture>
-                <img src="../../img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
-            </picture>
-        </nav>
-        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
-
-
-    </footer>
 </body>
 
 </html>
